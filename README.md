@@ -23,7 +23,7 @@ JS Development Environment
     - `npm start`
     - `npm run share`
 - **Transpiler**
-  - Babel
+  - Babel*
   - Typescript
   - Elm
 - **Bundlers (5 Module formats)**
@@ -46,3 +46,11 @@ JS Development Environment
   - Webpack: comprehensive (CSS, images, fonts, html)*
   - Rollup: tree-shaking performance
   - JSPM: runtime loader
+- **SourceMaps**
+  - Debug transpiled and bundled code
+  - Map code back to original source
+  - Downloaded if you open dev tools
+- **Linter**
+  - JSLint (Crockford)
+  - JSHint
+  - ESLint (current standard)*
