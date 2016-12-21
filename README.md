@@ -22,3 +22,27 @@ JS Development Environment
   - npm scripts
     - `npm start`
     - `npm run share`
+- **Transpiler**
+  - Babel
+  - Typescript
+  - Elm
+- **Bundlers (5 Module formats)**
+  - IIFE
+  - Asynchronous Module Definition (AMD)
+  - CommonJS (CJS)*
+  - Universal Module Definition (UMD)
+  - ES6 Modules*
+    - Standardized
+    - Statically analyzable
+      - improved autocomplete
+      - intelligent refactoring
+      - fails fast
+      - tree shaking: dead-code elimination
+    - Easy to read
+      - named imports
+      - default exports
+- **Bundlers**
+  - Browserify: simple
+  - Webpack: comprehensive (CSS, images, fonts, html)*
+  - Rollup: tree-shaking performance
+  - JSPM: runtime loader
