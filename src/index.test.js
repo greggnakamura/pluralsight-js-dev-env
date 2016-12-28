@@ -16,7 +16,7 @@ describe('index.html', () => {
     // use jsdom
     jsdom.env(index, function (err, window) {
       const h1 = window.document.getElementsByTagName('h1')[0];
-      expect(h1.innerHTML).to.equal('Hello World!');
+      expect(h1.innerHTML).to.equal('Hello world!!!');
 
       done(); // tell mocha test is done
 

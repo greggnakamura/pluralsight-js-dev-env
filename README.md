@@ -54,3 +54,52 @@ JS Development Environment
   - JSLint (Crockford)
   - JSHint
   - ESLint (current standard)*
+- **Testing and Continuous Integration**
+  - Testing Framework
+    - Mocha* (popular, configurable)
+    - Jasmine (popular)
+    - Tape
+    - QUnit
+    - AVA
+    - Jest
+  - Assertion Libraries
+    - Chai*
+    - Should.js
+    - expect
+  - Helper Libraries
+    - JSDOM* (simulate DOM in memory)
+    - Cheerio (jQuery for server)
+  - Where to Run Tests
+    - Browser
+      - Karma, Testem
+    - Headless Browser
+      - PhantomJS
+    - In-memory DOM
+      - JSDOM*
+  - Where Do Test Files Belong?
+    - Centralize
+      - Less "noise" in src folder
+      - Deployment confusion
+      - Inertia
+    - Alongside*
+      - Easy imports
+      - Clear visibility
+      - Convenient to open
+      - No recreating folder structure
+      - Easy to move files
+  - When Should Tests Run?
+    - Unit Tests should run when you hit save
+- **Continuous Integration**
+  - What does CI do?
+    - Run automated build
+    - Run your tests
+    - Check code coverage
+    - Automate deployment
+  - CI Servers
+    - Travis* (linux)
+    - Appveyor* (Windows)
+    - Jenkins
+    - CircleCI
+    - Semaphore
+    - SnapCI
+
