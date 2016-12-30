@@ -9,14 +9,14 @@ describe('Our first test', () => {
 });
 
 describe('index.html', () => {
-  it('should say hello', (done) => {
+  it('should have h1 that says Users', (done) => {
     // cache contents of homepage
     const index = fs.readFileSync('./src/index.html', 'utf-8');
 
     // use jsdom
     jsdom.env(index, function (err, window) {
       const h1 = window.document.getElementsByTagName('h1')[0];
-      expect(h1.innerHTML).to.equal('Hello world!!!');
+      expect(h1.innerHTML).to.equal('Users');
 
       done(); // tell mocha test is done
 
