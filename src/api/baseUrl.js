@@ -3,10 +3,9 @@ export default function getBaseUrl() {
   // return inDevelopment ? 'http://localhost:8888/' : '/';
 
   // If 'useMockApi' use local with mock api data, otherwise, use real api
-  /*
-    - Prod API: http://localhost:3000
-    - Mock API: http://localhost:3000/?useMockApi=true
-  */
+  //  - Prod API: http://localhost:3000
+  //  - Mock API: http://localhost:3000/?useMockApi=true
+
   return getQueryStringParameterByName('useMockApi') ? 'http://localhost:8888/' : '/';
 }
 
