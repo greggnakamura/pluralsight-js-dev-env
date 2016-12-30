@@ -143,3 +143,19 @@ JS Development Environment
       - JSON Server
         - `npm run start-mockapi`
         - http://localhost:8080/users
+- **Production Build**
+  - Minification
+  - Sourcemaps - code debugging
+  - Dynamic HTML
+  - Cache busting
+    - Hash bundle filename
+    - Generate HTML dynamically
+  - Bundle splitting
+    - Bundle splitting: http://screencast.com/t/UhqgXJwwaiq
+    - CSS bundle with hash: http://screencast.com/t/jseE4draJ8
+  - Error logging
+    - TrackJS*
+    - Sentry
+    - New Relic
+    - Raygun
+
