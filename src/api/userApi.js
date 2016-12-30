@@ -1,21 +1,33 @@
-import 'whatwg-fetch';  // polyfill
+import 'whatwg-fetch';
+import getBaseUrl from './baseUrl';
 
-// public
+const baseUrl = getBaseUrl();
+
 export function getUsers() {
   return get('users');
 }
 
-// private
-function get(url) {
-  return fetch(url).then(onSuccess, onError);
+export function deleteUser(id) {
+  return del(`users/${id}`);
 }
 
-// private
+function get(url) {
+  return fetch(baseUrl + url).then(onSuccess, onError);
+}
+
+// can't call func delete since reserved word
+function del(url) {
+  const request = new Request(baseUrl + url, {
+    method: 'DELETE'
+  });
+
+  return fetch(request).then(onSuccess, onError);
+}
+
 function onSuccess(response) {
   return response.json();
 }
 
-// private
 function onError(error) {
   console.log(error); // eslint-disable-line no-console
 }
