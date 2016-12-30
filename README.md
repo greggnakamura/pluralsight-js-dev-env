@@ -102,4 +102,44 @@ JS Development Environment
     - CircleCI
     - Semaphore
     - SnapCI
-
+- **HTTP Calls**
+  - HTTP Call Approaches
+    - Node
+      - http
+      - request*
+    - Browser
+      - XMLHttpRequest
+      - jQuery
+      - Fetch*
+    - Node & Browser
+      - isomorphic-fetch
+      - xhr
+      - SuperAgent
+      - Axios
+  - Why Centralize API Calls?
+    - Configure all calls
+    - Handle preloader logic
+    - Handle errors
+    - Single seam for mocking
+  -Why Mock HTTP?
+    - Unit Testing
+    - Instant response
+    - Keep working when services are down
+    - Rapid prototyping
+    - Avoid inter-team bottlenecks
+    - Work offline
+  - How to Mock HTTP
+    - Nock
+    - Static JSON
+    - Create dev webserver (api-mock, JSON server, JSON Schema faker, BrowserSync, Express)
+  - Our Plan for Mocking HTTP
+    - Declare our scheme
+      - JSON schema faker
+    - Generate Random Data
+      - faker.js
+      - chance.js
+      - randexp.js
+    - Serve Data via API
+      - JSON Server
+        - `npm run start-mockapi`
+        - http://localhost:8080/users
